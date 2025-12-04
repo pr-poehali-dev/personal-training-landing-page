@@ -84,7 +84,7 @@ const Index = () => {
             <p className="text-xl text-muted-foreground">Профессионалы мирового уровня</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="overflow-hidden"
+            <Card className="overflow-hidden">
               <div className="relative h-96">
                 <img 
                   src="https://cdn.poehali.dev/projects/8f5ecc93-4b7d-49c0-8655-0ec26568da37/files/8dc4ae9a-8e95-43be-8c59-dbf744c69f53.jpg"
