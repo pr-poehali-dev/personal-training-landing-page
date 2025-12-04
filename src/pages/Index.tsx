@@ -65,10 +65,10 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/projects/8f5ecc93-4b7d-49c0-8655-0ec26568da37/files/d1cd0fff-8af7-4ce5-8e8f-0a610a402d70.jpg"
                 alt="Зал на Арбате"
-                className="rounded-2xl shadow-2xl hover-scale"
+                className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-secondary text-white p-6 rounded-xl shadow-lg">
-                <Icon name="MapPin" className="text-white mb-2" size={32} />
+              <div className="absolute -bottom-6 -right-6 bg-primary text-background p-6 rounded-xl shadow-lg">
+                <Icon name="MapPin" className="text-background mb-2" size={32} />
                 <p className="font-bold">Премиум зал</p>
                 <p className="text-sm">Москва, Арбат</p>
               </div>
@@ -84,14 +84,14 @@ const Index = () => {
             <p className="text-xl text-muted-foreground">Профессионалы мирового уровня</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="overflow-hidden hover-scale">
+            <Card className="overflow-hidden"
               <div className="relative h-96">
                 <img 
                   src="https://cdn.poehali.dev/projects/8f5ecc93-4b7d-49c0-8655-0ec26568da37/files/8dc4ae9a-8e95-43be-8c59-dbf744c69f53.jpg"
                   alt="Главный тренер"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-full font-bold">
+                <div className="absolute top-4 right-4 bg-primary text-background px-4 py-2 rounded-full font-bold">
                   🏆 Чемпион Мира 2025
                 </div>
               </div>
@@ -119,28 +119,28 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden hover-scale">
-              <div className="relative h-96 bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center">
-                <Icon name="User" size={120} className="text-secondary" />
+            <Card className="overflow-hidden"
+              <div className="relative h-96 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                <Icon name="User" size={120} className="text-primary" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-2">Мария Соколова</h3>
-                <p className="text-secondary font-semibold mb-4">Профессиональный тренер</p>
+                <p className="text-primary font-semibold mb-4">Профессиональный тренер</p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <Icon name="CheckCircle" className="text-secondary mt-1" size={20} />
+                    <Icon name="CheckCircle" className="text-primary mt-1" size={20} />
                     <span>Мастер спорта по фитнес-бикини</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Icon name="CheckCircle" className="text-secondary mt-1" size={20} />
+                    <Icon name="CheckCircle" className="text-primary mt-1" size={20} />
                     <span>7 лет персонального тренерства</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Icon name="CheckCircle" className="text-secondary mt-1" size={20} />
+                    <Icon name="CheckCircle" className="text-primary mt-1" size={20} />
                     <span>Специализация: жиросжигание, функциональный тренинг</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Icon name="CheckCircle" className="text-secondary mt-1" size={20} />
+                    <Icon name="CheckCircle" className="text-primary mt-1" size={20} />
                     <span>Эксперт по женским тренировкам</span>
                   </li>
                 </ul>
@@ -162,7 +162,7 @@ const Index = () => {
               { name: "Анна", result: "+10 кг мышц за 6 месяцев", metric: "+10кг" },
               { name: "Сергей", result: "-25 кг за 5 месяцев", metric: "25кг" }
             ].map((client, idx) => (
-              <Card key={idx} className="overflow-hidden hover-scale">
+              <Card key={idx} className="overflow-hidden">
                 <div className="relative h-64 bg-gradient-to-br from-primary/10 to-secondary/10">
                   <img 
                     src="https://cdn.poehali.dev/projects/8f5ecc93-4b7d-49c0-8655-0ec26568da37/files/6ef1ba70-64e7-41ab-ad0e-b5e0a48d7d83.jpg"
@@ -182,7 +182,7 @@ const Index = () => {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Card className="inline-block p-8 bg-gradient-to-br from-primary/5 to-secondary/5">
+            <Card className="inline-block p-8 bg-card">
               <div className="flex items-center gap-4">
                 <Icon name="Trophy" className="text-primary" size={48} />
                 <div className="text-left">
@@ -222,7 +222,7 @@ const Index = () => {
                 features: ["Комплексные упражнения", "Высокая интенсивность", "Гибкость"]
               }
             ].map((service, idx) => (
-              <Card key={idx} className="hover-scale">
+              <Card key={idx}>
                 <CardContent className="p-6">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Icon name={service.icon as any} className="text-primary" size={32} />
@@ -241,34 +241,34 @@ const Index = () => {
               </Card>
             ))}
           </div>
-          <div className="mt-12 bg-gradient-to-r from-primary to-secondary text-white rounded-2xl p-8 md:p-12">
+          <div className="mt-12 bg-primary text-background rounded-2xl p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-3xl font-bold mb-4">Первая тренировка бесплатно!</h3>
                 <p className="text-lg mb-6">Познакомьтесь с тренером, оцените зал и получите план тренировок</p>
-                <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
+                <Button size="lg" variant="secondary" className="bg-background text-primary hover:bg-background/90 hover-scale-button">
                   Записаться сейчас
                   <Icon name="ArrowRight" className="ml-2" size={20} />
                 </Button>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                  <Icon name="Clock" className="text-white mb-2" size={32} />
+                <div className="bg-background/10 backdrop-blur-sm rounded-xl p-4">
+                  <Icon name="Clock" className="text-background mb-2" size={32} />
                   <p className="font-bold">60 минут</p>
                   <p className="text-sm">Длительность тренировки</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                  <Icon name="Users" className="text-white mb-2" size={32} />
+                <div className="bg-background/10 backdrop-blur-sm rounded-xl p-4">
+                  <Icon name="Users" className="text-background mb-2" size={32} />
                   <p className="font-bold">1 на 1</p>
                   <p className="text-sm">Персональный подход</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                  <Icon name="Calendar" className="text-white mb-2" size={32} />
+                <div className="bg-background/10 backdrop-blur-sm rounded-xl p-4">
+                  <Icon name="Calendar" className="text-background mb-2" size={32} />
                   <p className="font-bold">Гибкий график</p>
                   <p className="text-sm">Удобное время</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                  <Icon name="Target" className="text-white mb-2" size={32} />
+                <div className="bg-background/10 backdrop-blur-sm rounded-xl p-4">
+                  <Icon name="Target" className="text-background mb-2" size={32} />
                   <p className="font-bold">100%</p>
                   <p className="text-sm">Достижение целей</p>
                 </div>
@@ -302,7 +302,7 @@ const Index = () => {
                 rating: 5
               }
             ].map((review, idx) => (
-              <Card key={idx} className="hover-scale">
+              <Card key={idx}>
                 <CardContent className="p-6">
                   <div className="flex gap-1 mb-4">
                     {[...Array(review.rating)].map((_, i) => (
@@ -378,7 +378,7 @@ const Index = () => {
 
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-primary/5 via-background to-secondary/5 rounded-2xl p-8 md:p-12">
+          <div className="max-w-4xl mx-auto bg-card rounded-2xl p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h2 className="text-4xl font-bold mb-4">НАЧНИТЕ СВОЮ ТРАНСФОРМАЦИЮ</h2>
@@ -432,7 +432,7 @@ const Index = () => {
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg border bg-background"
                 />
-                <Button size="lg" className="w-full text-lg">
+                <Button size="lg" className="w-full text-lg hover-scale-button">
                   Записаться на бесплатную тренировку
                   <Icon name="Send" className="ml-2" size={20} />
                 </Button>
