@@ -119,7 +119,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden"
+            <Card className="overflow-hidden">
               <div className="relative h-96 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
                 <Icon name="User" size={120} className="text-primary" />
               </div>
